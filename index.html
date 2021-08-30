@@ -4,12 +4,186 @@
 		<meta charset="utf-8">
 		<title>Index</title>
 		<script src="js/login.js"></script>
+    	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+    		<link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+    		<style>
+    			body{
+    			    font-family: tahoma;
+    				background-color: #5e5b5c;
+    			}
+    			    
+    			.shadow-effect{
+    			    background: white;/* 框中间的颜色 */
+    			    padding: 20px;
+    			    border-radius: 4px;
+    			    text-align: center;
+    			    border: 1px solid #15ec79;/* 边框的颜色 */
+    			    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.2);
+    			}
+    			  			    
+    			#customers-testimonials .shadow-effect p{
+    			    font-family: inherit;
+    			    font-size: 17px;
+    			    line-height: 1.5;
+    			    margin: 0 0 17px 0;
+    			    font-weight: 300;
+    			}
+    	   
+    			.testimonial-name{
+    			    margin: -17px auto 0;
+    			    display: table;
+    			    width: auto;
+    			    background: #31fc22;
+    			    padding: 9px 25px;
+    			    text-align: center;
+    			    color: white;
+    			    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+    			}
+    			    
+    			#customers-testimonials .item{
+    			    text-align: center;
+    			    caption-side: 50px;
+    			    margin-bottom: 80px;
+    			    opacity: 0.2;
+    			    transform: scale3d(0.8, 0.8, 1);
+    			    transition: all 0.3s ease-in-out;
+    			}
+    				
+    			#customers-testimonials .owl-item.active.center .item{
+    			    opacity: 1;
+    			    transform: scale3d(1.0, 1.0, 1);
+    			}
+    			
+    			.owl-carousel .owl-item img{
+    			    transform-style: preserve-3d;
+    			    max-width: 90px;
+    			    margin: 0 auto 17px;
+    			}
+    			
+    			#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+    			#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span{
+    			    background: #1ffa26;/* READ MORE按钮颜色 */
+    			    transform: translate3d(0px, -50%, 0px) scale(0.7);
+    			}
+    			
+    			#customers-testimonials.owl-carousel .owl-dots{
+    			   display: inline-block;
+    			    width: 100%;
+    			    text-align: center;
+    			}
+    			
+    			#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+    			    display: inline-block;
+    			}
+    			
+    			#customers-testimonials.owl-carousel .owl-dots .owl-dot span{
+    			    background: blue;/* 下面的小方格 */
+    			    display: inline-block;
+    			    height: 20px;
+    			    margin: 0 2px 5px;
+    			    transform: translate3d(0px, -50%, 0) scale(0.3);
+    			    transform-origin: 50% 50% 0;
+    			    transition: all 250ms ease-out 0s;
+    			    width: 20px;
+    			}
+    		</style>
+    	</head>
+		
 	<body onload="Chk()">
 		<section class="testimonials">
 		    <div class="container">
-				<div class="container">
-				    <br><br><br><br><br><br><center><h1><font color="deepskyblue"><b>高2022级17班</b></font></h1></center><br><br><br>
-					<img src="img/yun.jpg">	  
+		        <br><br><br><br><br><br><center><h1><font color="deepskyblue"><b>高2022级17班</b></font></h1></center><br><br><br>
+		        <div class="col-sm-12">
+		            <div id="customers-testimonials" class="owl-carousel">
+		                <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/a.jpg" class="img-circle" alt=""><!-- 图片 -->
+		                        <p>
+		                            <font color="red"><b>合影</b></font>这里大多数是一起的合影
+		                        </p>
+		                    </div>
+		                    <div class="testimonial-name">
+		                        <a href="a.html" style="text-decoration: none;color: white;" >READ MORE</a><!-- 跳转 -->
+		                    </div>
+		                </div>
+		                
+		               <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/b.jpg" class="img-circle" alt=""><!-- 图片 -->
+		                        <p>
+		                            <font color="red"><b>活动</b></font>一些活动的照片
+		                        </p>
+		                    </div>
+		                    <div class="testimonial-name">
+		                       <a href="Attraction7.html" style="text-decoration: none;color: white;" >READ MORE</a><!-- 跳转 -->
+		                    </div>
+		                </div>
+		                
+		                 <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/c.jpg" class="img-circle" alt=""><!-- 图片 -->
+		                        <p>
+		                            <font color="red"><b>教室风采？</b></font>一些教室的图片？
+		                        </p>
+		                    </div>
+		                    <div class="testimonial-name">
+		                        <a href="Attraction 1.html" style="text-decoration: none;color: white;">READ MORE</a><!-- 跳转 -->
+		                    </div>
+		                </div>
+						
+						<div class="item">
+						    <div class="shadow-effect">
+						        <img src="img/d.jpg" class="img-circle" alt=""><!-- 图片 -->
+						        <p>
+						            <font color="red"><b>寝室？</b></font>这个有必要嘛？
+						        </p>
+						    </div>
+						    <div class="testimonial-name">
+						        <a href="Attraction2.html" style="text-decoration: none;color: white;" >READ MORE</a><!-- 跳转 -->
+						    </div>
+						</div>
+						
+						<div class="item">
+						    <div class="shadow-effect">
+						        <img src="img/e.jpg" class="img-circle" alt="">
+						        <p>
+						            <font color="red"><b>校园？</b></font>校园美景？
+						        </p>
+						    </div>
+						    <div class="testimonial-name">
+						        <a href="Attraction6.html" style="text-decoration: none;color: white;" >READ MORE</a><!-- 跳转 -->
+						    </div>
+						</div>
+		                
+		                <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/f.jpg" class="img-circle" alt=""><!-- 图片 -->
+		                        <p>
+		                            <font color="red"><b>教师团队？</b></font>老师的图片？
+		                        </p>
+		                    </div>
+		                    <div class="testimonial-name">
+		                        <a href="Attraction3.html" style="text-decoration: none;color: white;" >READ MORE</a>
+		                    </div>
+		                </div>
+		                
+		                <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/g.jpg" class="img-circle" alt=""><!-- 图片 -->
+		                        <p>
+		                            <font color="red"><b>留言？</b></font>开设留言功能？（这个完全不晓得怎么弄
+		                        </p>
+		                    </div>
+		                    <div class="testimonial-name">
+		                       <a href="Attraction5.html" style="text-decoration: none;color: white;" >READ MORE</a><!-- 跳转 -->
+		                    </div>
+		                </div> 
+		            </div>
+		        </div>
+		    </div>
+		</section>					 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
 		<script>
